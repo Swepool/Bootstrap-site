@@ -7,7 +7,15 @@ h1, h2, h3, h4, h5 ,h6, p {
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 48px;
+}
+
+.container {
+  max-width: 480px;
+}
+
+.nodetext {
+  color: #888888!important;
 }
 
 
