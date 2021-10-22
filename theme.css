@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5 ,h6, p {
     color: #ffffff!important;
 }
 
+a {
+  color: #7098cf;
+}
+
 h1 {
     font-size: 48px;
 }
