@@ -1,13 +1,19 @@
 body {
-    background-color: #2a2a2a!important;
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #272727;
 }
 
 h1, h2, h3, h4, h5 ,h6, p {
     color: #ffffff!important;
+    font-weight: 700;
 }
 
 .swepool {
-  color: #7098cf;
+  color: #ffffff;
 }
 
 h1 {
@@ -20,13 +26,13 @@ h1 {
 }
 
 .nodetext {
-  color: #888888!important;
+  color: #ffffff7c!important;
 }
 
 
 button {
-    background: #7098CF;
-    border: 0px solid #7098cf;
+    background: #00000000;
+    border: 2px solid #ffffff;
     border-radius: 21px;
     height: 40px;
     width: 150px;
@@ -35,8 +41,8 @@ button {
 }
 
 button:hover {
-    background: #c4ddff;
-    border: 1px solid #c4ddff;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
     border-radius: 21px;
     height: 40px;
     width: 150px;
@@ -44,7 +50,7 @@ button:hover {
 }
 
 code {
-    color: #73cf70
+    color: #ececec
 }
 
 .container {
