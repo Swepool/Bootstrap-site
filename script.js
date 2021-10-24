@@ -1,3 +1,9 @@
+fetch('/height.json')
+.then(response => response.json())
+.then(data => {
+    document.getElementById('lastrun').innerHTML = data.height
+})
+
 fetch('https://swenode.org/api/getinfo')
 .then(response => response.json())
 .then(data => {
