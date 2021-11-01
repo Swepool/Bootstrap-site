@@ -1,17 +1,36 @@
-fetch('/height.json')
-.then(response => response.json())
-.then(data => {
-    document.getElementById('lastrun').innerHTML = data.height
-})
+async function getData(amount) {
 
-fetch('https://swenode.org/api/getinfo')
-.then(response => response.json())
-.then(data => {
-    document.getElementById('height').innerHTML = data.height
-})
+    await fetch("https://blocksum.org/api/getinfo")
+    .then(res => res.json())
+    .then(async(data) => {
+      netHeight = data.height;
+    });
 
-fetch('https://blocksum.org/api/getinfo')
-.then(response => response.json())
-.then(data => {
-    document.getElementById('blocksum').innerHTML = data.height
-})
+    await fetch('https://swenode.org/api/getinfo')
+    .then(res => res.json())
+    .then(async(data) => {
+        nodeHashrate = data.hashrate;
+        nodeHeight = data.height;
+        nodeStatus = data.status;
+    })
+
+    await fetch('/height.json')
+    .then(res => res.json())
+    .then(async(data) => {
+        bootstraped = data.height;
+    })
+
+    document.getElementById('nodeHeight').innerHTML = nodeHeight;
+    document.getElementById('netHeight').innerHTML = netHeight;
+    document.getElementById('bootstraped').innerHTML = bootstraped;
+    
+    if (nodeStatus === 'OK') {
+    document.getElementById('status').innerHTML = ' ✅'
+    } else {
+    document.getElementById('status').innerHTML = ' 🛑'
+
+    } 
+
+}
+
+getData()

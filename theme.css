@@ -1,5 +1,4 @@
 body {
-    background-image: url('/bg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -8,16 +7,26 @@ body {
 }
 
 h1, h2, h3, h4, h5 ,h6, p {
-    color: #ffffff!important;
+    color: #ffffff;
     font-weight: 700;
 }
 
 .swepool {
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.swepool:hover {
+  color: #7098cf;
+  text-decoration: underline;
 }
 
 h1 {
     font-size: 48px;
+}
+
+.emoji {
+ color: white!important;
 }
 
 
@@ -31,26 +40,30 @@ h1 {
 
 
 button {
-    background: #00000000;
-    border: 2px solid #ffffff;
+    background: #ffffff;
+    border: none;
     border-radius: 21px;
     height: 40px;
     width: 150px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-top: 20px;
 }
 
 button:hover {
-    background: #eeeeee;
-    border: 1px solid #eeeeee;
+    background: rgb(134, 134, 134)!important;
+    border: none;
     border-radius: 21px;
     height: 40px;
     width: 150px;
-    color: rgb(71, 71, 71);
+    color: rgb(255, 255, 255);
 }
 
 code {
-    color: #ececec
+    color: #5cff5c
+}
+
+#bootstraped {
+  color: #ffffff;
 }
 
 .container {
@@ -80,7 +93,7 @@ code {
       background: #5ff281;
     }
     87.5% {
-      background: 5ff2f0;
+      background: #5ff2f0;
     }
   }
   
@@ -91,3 +104,42 @@ code {
     -moz-animation: rgb 10s ease infinite;
     animation: rgb 10s ease infinite;
 } 
+
+@keyframes rgbText {
+  0%, 100% {
+    color: #5f86f2;
+  }
+  12.5% {
+    color: #a65ff2;
+  }
+  25% {
+    color: #f25fd0;
+  }
+  37.5% {
+    color: #f25f61;
+  }
+  50% {
+    color: #f2cb5f;
+  }
+  62.5% {
+    color: #abf25f;
+  }
+  75% {
+    color: #5ff281;
+  }
+  87.5% {
+    color: #5ff2f0;
+  }
+}
+
+.rgbText {
+
+  color: #5f86f2;
+  -webkit-animation: rgbText 10s ease infinite;
+  -moz-animation: rgbText 10s ease infinite;
+  animation: rgbText 10s ease infinite;
+} 
+
+.status {
+  color: #fff;
+}
