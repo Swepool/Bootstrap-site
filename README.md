@@ -13,7 +13,7 @@ Run node in a screen and name it "node"
 screen -S node
 ```
 
-Set Cron tab to run bootstrap.sh (This will run  everyday at 5AM)
+Set Crontab to run bootstrap.sh (This will run  everyday at 5AM)
 ```
 0 5 * * * /home/ubuntu/bootstrap.sh
 ```
