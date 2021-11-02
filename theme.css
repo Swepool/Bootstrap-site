@@ -45,7 +45,7 @@ button {
     border-radius: 21px;
     height: 40px;
     width: 150px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     margin-top: 20px;
 }
 
@@ -143,3 +143,4 @@ code {
 .status {
   color: #fff;
 }
+
