@@ -17,3 +17,4 @@ Set Crontab to run bootstrap.sh (This will run  everyday at 5AM)
 ```
 0 5 * * * /home/ubuntu/bootstrap.sh
 ```
+Make sure to change script.js to your API's
