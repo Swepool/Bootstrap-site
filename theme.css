@@ -6,9 +6,18 @@ body {
     background-color: #272727;
 }
 
+@font-face {
+  font-family: hydro;
+  src: url(/Hydrophilia\ Iced.ttf);
+}
+
 h1, h2, h3, h4, h5 ,h6, p {
     color: #ffffff;
     font-weight: 700;
+}
+
+h1 {
+  font-family: hydro;
 }
 
 .swepool {
@@ -47,6 +56,7 @@ button {
     width: 150px;
     color: #ffffff;
     margin-top: 20px;
+    font-family: hydro;
 }
 
 button:hover {
@@ -59,7 +69,7 @@ button:hover {
 }
 
 code {
-    color: #5cff5c
+  color: #5cff5c;
 }
 
 #bootstraped {
